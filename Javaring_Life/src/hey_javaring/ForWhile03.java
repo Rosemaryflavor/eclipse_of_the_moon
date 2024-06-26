@@ -16,7 +16,14 @@ public class ForWhile03 {
 		
 		// while 문 활용
 		System.out.println("====== [ while문 ] " + dan + " 단 ==========");
+		int hang = 1;
 		
+		while (hang <= 9) {
+			int result = 0;
+			result = dan * hang;
+			System.out.println(dan + " * " + hang + " = " + result);
+			hang++;
+		}
 		
 		
 		
@@ -25,6 +32,10 @@ public class ForWhile03 {
 		// for 문 활용
 		System.out.println("====== [ for문 ] " + dan + " 단 ==========");
 		
+		for ( int i=1; i<=9; i++) {
+			int result = 0;
+			
+		}
 		
 		
 		

@@ -82,6 +82,18 @@ public class ForWhile01 {
 		}
 		
 		System.out.println("(for) 1~60000까지의 정수 중 100의 배수는 " + cnt + "입니다.");
+		
+		//(while) 1~60000까지의 정수 중 100의 배수는 몇개?
+		int c = 1;
+		int cCnt = 0;
+		
+		while (c <= 60000) {
+			if (c % 100 == 0) {
+				cCnt++;
+			}
+			c++;
+		}
+		System.out.println("(while) 1~60000까지의 정수 중 100의 배수는 " + cCnt + "입니다.");
 	}
 
 }
