@@ -2,7 +2,7 @@ package hey_javaring.book;
 
 import java.util.Scanner;
 
-public class BookCreate {
+public class Book {
 	
 	// 도서명
 	// 가격
@@ -20,6 +20,15 @@ public class BookCreate {
 	private String isbn;
 	private int page;
 	
+	public String bookInfo() {
+		String result = "";
+		
+		result = "=== [도서정보] ===";
+		result += "도서명 : " + this.title;
+		return result += "가격 : " + this.price;
+		
+		
+				}
 	
 	public String getTitle() {
 		return title;
