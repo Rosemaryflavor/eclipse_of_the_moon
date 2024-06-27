@@ -20,13 +20,24 @@ public class Book {
 	private String isbn;
 	private int page;
 	
+	public Book() {}
+	
+	public Book(String arg1, String arg2) {
+		this.title = arg1;
+		this.author = arg2;
+	}
+	
 	public String bookInfo() {
 		String result = "";
 		
 		result = "=== [도서정보] ===";
-		result += "도서명 : " + this.title;
-		return result += "가격 : " + this.price;
+		result += "도서명 : " + this.title + "\n";
+		result += "가격 : " + this.price + "\n";
+		result += "글쓴이: " + this.author + "\n";
+		result += "출판사 : " + this.publisher + "\n";
+		result += "발행년도 : " + this.pubYear + "\n";
 		
+		return result;
 		
 				}
 	
