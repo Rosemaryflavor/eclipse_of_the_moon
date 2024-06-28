@@ -51,7 +51,7 @@ public class ArrayList01 {
         for (int i=0; i<library.size(); i++) {
         	Book book = library.get(i);
         	
-        	System.out.println(book.bookInfo());
+        	System.out.println();
         }
 
 	}
