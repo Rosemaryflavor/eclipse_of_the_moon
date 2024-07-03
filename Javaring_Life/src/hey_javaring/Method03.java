@@ -13,7 +13,10 @@ public class Method03 {
 		// -----------------------------------------------------
 		
 		
-		Switch03.main(null);
+Switch03.main(null);
+		
+		Method01.hello();
+
 
 	}
 

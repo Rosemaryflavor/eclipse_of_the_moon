@@ -6,7 +6,7 @@ public class CalcSumEx {
 
 	private static Scanner sc = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args, int result) {
 
 		/*
 		[ 요구사항 ]
