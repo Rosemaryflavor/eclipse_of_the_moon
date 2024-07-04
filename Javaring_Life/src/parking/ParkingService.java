@@ -100,14 +100,21 @@ public class ParkingService {
 
 	public void outParking() {
 
-		String[][] parkingSpace = parkingDAO.selectParking();
+		
 
 		System.out.print("주차 위치를 입력해 주세요. :");
 		String locationStr = sc.next();
 
 	
-					parkingDAO.deleteParking(locationStr);
-					System.out.println("출차 완료!! 안녕히 가세요.");
+     boolean flag = parkingDAO.deleteParking(locationStr);
+                    System.out.println(">>>>>>>>>" + flag);
+                   
+                    if(flag) {
+                    	System.out.println("출차 완료!! 안녕히 가세요.");
+                    }else {
+                    	System.out.println("주차된 차량이 없습니다. 안녕히 가세요");
+                    }
+					
 					
 
 //		if (count == parkingDAO.ROW * parkingDAO.COL) {
